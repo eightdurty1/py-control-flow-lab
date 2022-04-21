@@ -12,9 +12,19 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
-
+term = 0
+a = 0
+b = 1
 # term,number = 0,1
-# while term < 50:
-#     print(f"term: {term} / number: {number}")
-#     term,number = number,term + number
+while term < 50:
+    if term < 2:
+        print(f"term: {term} / number: {term}")
+    else:
+        numb = a + b
+        print(f"term: {term} / number: {numb}")
+        a = b
+        b = numb
+        term = term + 1
+
+    term,number = number,term + number
 
